@@ -8,17 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Microsoft.VisualBasic;
-
 namespace WindowsLab
 {
-    public partial class Caso1_Loop_Vectores_ : Form
+    public partial class Ejercicio5 : Form
     {
-        public Caso1_Loop_Vectores_()
+        public Ejercicio5()
         {
             InitializeComponent();
         }
-     
     }
-
 }
