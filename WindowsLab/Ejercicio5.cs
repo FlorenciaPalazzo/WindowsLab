@@ -16,5 +16,36 @@ namespace WindowsLab
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtUsuario.Text;
+            string tipo = txtTipo.Text;
+            string sexo = txtSexo.Text;
+
+            if (nombre == "Gabriela")
+            {
+                if (sexo == "Femenino")
+                {
+
+                    switch (tipo)
+                    {
+                        case "Administrador":
+                            MessageBox.Show("Usuario: " + nombre + ", " + "Sexo: " + sexo + ", " + "Rol: " + tipo);
+                            break;
+                        case "Estandar":
+                            MessageBox.Show("Rol incorrecto no es " + tipo);
+                            break;
+                        case "Invitados":
+                            MessageBox.Show("Rol incorrecto no es " + tipo);
+                            break;
+                        default:
+                           MessageBox.Show("Escriba el rol correcto");
+                            break;
+                    }
+                }else { MessageBox.Show("Escriba el sexo correcto"); };
+                
+            }else { MessageBox.Show("Escriba el nombre correcto"); };
+        }
     }
 }

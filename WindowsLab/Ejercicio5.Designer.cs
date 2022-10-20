@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSexo = new System.Windows.Forms.TextBox();
+            this.txtTipo = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(228, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtUsuario.Location = new System.Drawing.Point(228, 88);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.TabIndex = 0;
             // 
-            // textBox2
+            // txtSexo
             // 
-            this.textBox2.Location = new System.Drawing.Point(228, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtSexo.Location = new System.Drawing.Point(228, 124);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(100, 20);
+            this.txtSexo.TabIndex = 1;
             // 
-            // textBox3
+            // txtTipo
             // 
-            this.textBox3.Location = new System.Drawing.Point(228, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtTipo.Location = new System.Drawing.Point(228, 161);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtTipo.TabIndex = 2;
             // 
             // lblUsuario
             // 
@@ -85,27 +85,28 @@
             this.lblTipo.TabIndex = 5;
             this.lblTipo.Text = "Tipo";
             // 
-            // button1
+            // btnIngresar
             // 
-            this.button1.Location = new System.Drawing.Point(239, 216);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnIngresar.Location = new System.Drawing.Point(239, 216);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.TabIndex = 6;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // Ejercicio5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 295);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblSexo);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.txtSexo);
+            this.Controls.Add(this.txtUsuario);
             this.Name = "Ejercicio5";
             this.Text = "Ejercicio5";
             this.ResumeLayout(false);
@@ -115,12 +116,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIngresar;
     }
 }
