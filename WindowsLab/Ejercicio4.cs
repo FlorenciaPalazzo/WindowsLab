@@ -32,8 +32,9 @@ namespace WindowsLab
             double baseMenor = Convert.ToDouble(txtBaseMenor.Text);
 
             double altura = Convert.ToDouble(txtAltura.Text);
+            double calculo = (((baseMayor + baseMenor) / 2) * altura);
 
-            MessageBox.Show("El área del trapecio es: " + (((baseMayor + baseMenor) / 2) * altura));
+            MessageBox.Show("El área del trapecio es: " + calculo);
         }
 
         private void btnRectangulo_Click(object sender, EventArgs e)
