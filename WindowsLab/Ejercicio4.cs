@@ -43,5 +43,6 @@ namespace WindowsLab
 
             MessageBox.Show("El área del rectangulo es: " + (baseRectangulo * alturaRectangulo));
         }
+
     }
 }
