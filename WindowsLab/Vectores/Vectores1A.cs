@@ -29,7 +29,7 @@ namespace WindowsLab
 
        
 
-        //Para tomar datos
+        //Toma Nombres
         private void GetNombres(string[]alumnos)
         {
             for (int i = 0; i < alumnos.Length; i++)
@@ -39,16 +39,18 @@ namespace WindowsLab
             }
         }
 
+        //Toma notas
         private void GetNotas(double[] notas)
         {
 
             for (int i = 0; i < notas.Length; i++)
             {
                 notas[i] = Convert.ToDouble(Interaction.InputBox("Ingrese la nota del alumno"));
+            
             }
 
         }
-        //Para mostrar
+        //Devuelve mayor nota
         private double  MayorNota(double[]notas)
         {
             double mayor = 0;
@@ -63,6 +65,7 @@ namespace WindowsLab
             return mayor;
         }
 
+        //Devuelve el promedio
         private double CalculoPromedio(double[]notas)
         {
             double suma = 0;

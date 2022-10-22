@@ -22,22 +22,28 @@ namespace WindowsLab
 
         private void btnSuma_Click(object sender, EventArgs e)
         {
-            GetNumeros();
+            GetNumeros(precios);
+            double suma= SumaNumeros(precios);
+            MessageBox.Show($"La suma total de los precios es:{suma}");
         }
 
-        private  void GetNumeros()
+        private void GetNumeros(double[]precios)
         {
-            double suma = 0; 
-
             for (int i = 0; i < precios.Length; i++)
             {
                 double precio = Convert.ToDouble(Interaction.InputBox("Ingrese el precio"));
+                precios[i] = precio;
+            }
+        }
+        private double SumaNumeros(double[]precios)
+        {
+            double suma = 0;
+            foreach (double precio in precios)
+            {
                 suma += precio;
             }
-            MessageBox.Show("La suma de los precios es: " + Convert.ToDouble(suma));
-
-            
+            return suma;
+        }
     }
-}
 }
 

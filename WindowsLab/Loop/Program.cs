@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsLab.Vectores;
 
 namespace WindowsLab
 {
@@ -16,7 +17,7 @@ namespace WindowsLab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vectores1A());
+            Application.Run(new Vectores4());
         }
     }
 }
