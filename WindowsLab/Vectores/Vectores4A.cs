@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace WindowsLab.Vectores
 {
-    public partial class Vectores4 : Form
+    public partial class Vectores4A : Form
     {
         int[] edades;
         string[] nombres; 
-        public Vectores4()
+        public Vectores4A()
         {
             InitializeComponent();
         }

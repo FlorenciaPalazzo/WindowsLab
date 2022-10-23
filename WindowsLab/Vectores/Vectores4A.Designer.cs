@@ -1,6 +1,6 @@
 ﻿namespace WindowsLab.Vectores
 {
-    partial class Vectores4
+    partial class Vectores4A
     {
         /// <summary>
         /// Required designer variable.
