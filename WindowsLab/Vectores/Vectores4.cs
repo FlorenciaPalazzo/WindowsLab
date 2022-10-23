@@ -13,7 +13,7 @@ namespace WindowsLab.Vectores
 {
     public partial class Vectores4 : Form
     {
-        string[] edades;
+        int[] edades;
         string[] nombres; 
         public Vectores4()
         {
@@ -29,28 +29,32 @@ namespace WindowsLab.Vectores
             }
         }
 
-        private void GetEdades(string[] edades)
+        private void GetEdades(int[] edades)
         {
             for (int i = 0; i < edades.Length; i++)
             {
-                string edad = Interaction.InputBox("Ingrese la edad");
+                int edad = Convert.ToInt32(Interaction.InputBox("Ingrese la edad"));
                 edades[i] = edad;
             }
         }
 
-        private void Mostrar(string[] name, string[]age)  //name y age es un parametro cualquiera que hace referencia 
+        private void Mostrar(string[] name, int[]age)  //name y age es un parametro cualquiera que hace referencia 
                                                           // para cuando se invoque el metodo
         {
             for (int i = 0; i < name.Length; i++)
             {
-                MessageBox.Show($"Nombre: {name[i]} \n Edad: {age[i]} ");
+                if (age[i] >= 18)
+                {
+
+                    MessageBox.Show($"Nombre: {name[i]} \n Edad: {age[i]} ");
+                }
             }
         }
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
             nombres = new string[3];
-            edades = new string[3];
+            edades = new int[3];
 
             GetNombres(nombres);
             GetEdades(edades);
