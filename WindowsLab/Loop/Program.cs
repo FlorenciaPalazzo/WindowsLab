@@ -17,7 +17,7 @@ namespace WindowsLab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vectores4());
+            Application.Run(new Vectores5());
         }
     }
 }
