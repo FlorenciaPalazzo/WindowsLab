@@ -106,7 +106,6 @@ namespace WindowsLab
             ma.CalculoTempMedia();
             ma.ImprimirTempTrim();
             ma.MayorTemperatura();
-
         }
     }
 }
